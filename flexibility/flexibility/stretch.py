@@ -1,27 +1,29 @@
-"""Provide the primary functions."""
+"""canvas() enlongates string."""
 
 
-def canvas(with_attribution=True):
+def canvas(myString = ' '):
     """
-    Placeholder function to show example docstring (NumPy format).
-
-    Replace this function and doc string for your own project.
+    function to add spaces between letters in a string
 
     Parameters
     ----------
-    with_attribution : bool, Optional, default: True
-        Set whether or not to display who the quote is from.
+    myString : str
+        user input of string to manipulate.
 
     Returns
     -------
-    quote : str
-        Compiled string including quote and optional attribution.
+    myStringStretch : str
+        elongated string.
     """
+    list = []
+    for i in myString:
+        list.append(i)
 
-    quote = "The code is but a canvas to our imagination."
-    if with_attribution:
-        quote += "\n\t- Adapted from Henry David Thoreau"
-    return quote
+    separator = ' '
+    myStringStretch = separator.join(list)
+
+
+    return myStringStretch
 
 
 if __name__ == "__main__":
