@@ -9,3 +9,8 @@ import sys
 def test_flexibility_imported():
     """Sample test, will always pass so long as import statement worked."""
     assert "flexibility" in sys.modules
+
+
+def test_strech():
+    test = stretch.canvas("hello")
+    assert "h e l l o " == test
