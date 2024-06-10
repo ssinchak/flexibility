@@ -13,4 +13,4 @@ def test_flexibility_imported():
 
 def test_strech():
     test = stretch.canvas("hello")
-    assert "h e l l o " == test
+    assert "h e l l o" == test
